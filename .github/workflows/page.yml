@@ -21,4 +21,4 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git remote set-url origin https://github.com/${GITHUB_REPO}.git
-          git push --force --quiet "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" master:gh-pages
+          git push --force --quiet "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" main:gh-pages
