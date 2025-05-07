@@ -1,0 +1,52 @@
+# Direktori Dependencies
+# Folder ini biasanya berisi library yang diinstal oleh package manager (seperti npm, yarn, pnpm).
+# File-file ini tidak perlu dimasukkan ke dalam repositori karena bisa di-generate ulang
+# menggunakan package manager berdasarkan file package.json atau lock file.
+node_modules/
+
+# Hasil Build / Output
+# Direktori ini berisi file-file hasil proses build oleh Webpack (atau bundler lainnya).
+# File-file ini adalah output dan seharusnya tidak dilacak.
+/dist/
+/build/
+/out/
+*.parcel-cache/ # Jika menggunakan Parcel
+
+# File Log
+# File log seringkali bersifat sementara atau spesifik untuk lingkungan lokal.
+*.log
+logs/
+npm-debug.log*
+
+# File Temporary atau Cache
+*.tmp
+.temp/
+.cache/ # Cache dari bundler atau tools lain
+
+# File Konfigurasi Sensitif (jika ada)
+# File yang mungkin berisi kredensial API atau konfigurasi spesifik lingkungan lokal.
+# Berhati-hatilah jika ada file .env template yang perlu di-commit.
+.env
+.env.*
+
+# File Sistem Operasi (OS) yang Dibuat Otomatis
+# File-file ini dibuat oleh sistem operasi dan tidak relevan untuk proyek.
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+Desktop.ini     # Windows
+
+# File Editor atau IDE Specific
+# File konfigurasi editor atau IDE Anda.
+.vscode/        # VS Code settings
+.idea/          # IntelliJ/WebStorm settings
+*.sublime-project # Sublime Text
+*.sublime-workspace # Sublime Text
+.history        # Plugin history beberapa editor
+
+# File Coverage Report (jika Anda menjalankan tes unit)
+coverage/
+
+# Jika ada file lain yang spesifik di proyek Anda yang tidak perlu dilacak,
+# tambahkan di sini. Misalnya:
+# my-local-config.json

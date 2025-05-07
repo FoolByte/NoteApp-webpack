@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.12.1/dist/polyfill.min.js"></script>
+    <link rel="icon" href="note-task-comment-message-edit-write_108613.svg" />
+  </head>
+  <body>
+    <main>
+      <section id="formAddSection">
+        <form-add></form-add>
+      </section>
+
+      <search-bar></search-bar>
+
+      <section>
+        <!-- custom atribut title -->
+        <title-section title="My Notes"></title-section>
+
+        <loading-element></loading-element>
+
+        <h2 id="notesListEmpty">Tidak Ada Catatan...</h2>
+
+        <div id="notesList" class="list"></div>
+
+        <div id="notesListArchive" class="list"></div>
+      </section>
+    </main>
+
+    <footer><footer-bar></footer-bar></footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

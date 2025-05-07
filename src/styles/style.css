@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+main {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  min-height: 88vh;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#notesListEmpty {
+  text-align: center;
+  font-size: 2rem;
+  color: #949494;
+  font-weight: bolder;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    border-radius: 0;
+    padding-top: 5rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
