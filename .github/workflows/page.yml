@@ -20,5 +20,5 @@ jobs:
           npm run build
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git remote set-url origin https://github.com/${GITHUB_REPO}.git
-          git push --force --quiet "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" main:gh-pages
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git push --force --quiet "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" main:gh-pages
